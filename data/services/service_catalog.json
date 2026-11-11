@@ -1,0 +1,12 @@
+{"name":"checkout-api","version":"v2.8.6","environment":"production","owner":"commerce-platform","status":"degraded","dependencies":["postgres","redis","inventory-api"]}
+{"name":"payments-api","version":"v3.1.2","environment":"production","owner":"finance-platform","status":"healthy","dependencies":["postgres","billing-worker","auth-service"]}
+{"name":"inventory-api","version":"v1.9.7","environment":"production","owner":"catalog-platform","status":"healthy","dependencies":["postgres","redis","search-api"]}
+{"name":"search-api","version":"v2.3.0","environment":"production","owner":"catalog-platform","status":"healthy","dependencies":["redis","catalog-api","postgres"]}
+{"name":"auth-service","version":"v5.2.9","environment":"production","owner":"identity-platform","status":"degraded","dependencies":["postgres","redis","oauth-provider"]}
+{"name":"notification-worker","version":"v1.4.8","environment":"production","owner":"messaging-platform","status":"healthy","dependencies":["redis","postgres","email-gateway"]}
+{"name":"user-profile-api","version":"v4.2.1","environment":"production","owner":"identity-platform","status":"healthy","dependencies":["postgres","redis","auth-service"]}
+{"name":"recommendations-api","version":"v2.7.1","environment":"production","owner":"growth-platform","status":"healthy","dependencies":["redis","catalog-api","search-api"]}
+{"name":"billing-worker","version":"v2.0.4","environment":"production","owner":"finance-platform","status":"healthy","dependencies":["postgres","payments-api"]}
+{"name":"catalog-api","version":"v3.5.0","environment":"production","owner":"catalog-platform","status":"healthy","dependencies":["postgres","redis","search-api"]}
+{"name":"gateway-api","version":"v6.1.9","environment":"production","owner":"platform-ops","status":"healthy","dependencies":["auth-service","checkout-api","inventory-api"]}
+{"name":"order-events-worker","version":"v1.8.4","environment":"production","owner":"commerce-platform","status":"healthy","dependencies":["postgres","kafka","checkout-api"]}
